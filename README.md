@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>김원관 | 서경대학교 군사학과 · 장교후보생</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFBFD;--panel:#F2F2F5;--ink:#1D1D1F;--muted:#6E6E73;--line:#D8D8DE;--accent:#0A5FCC;--navbg:rgba(251,251,253,.82);--nav-h:56px;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B0B0D;--panel:#17171B;--ink:#F5F5F7;--muted:#98989F;--line:#2C2C31;--accent:#5AA2FF;--navbg:rgba(11,11,13,.8)}}
+:root[data-theme="dark"]{--bg:#0B0B0D;--panel:#17171B;--ink:#F5F5F7;--muted:#98989F;--line:#2C2C31;--accent:#5AA2FF;--navbg:rgba(11,11,13,.8)}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + env(safe-area-inset-top,0px) + 8px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR",-apple-system,"Apple SD Gothic Neo",system-ui,sans-serif;line-height:1.8;font-weight:400;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+
+/* fixed navigation */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;height:calc(var(--nav-h) + env(safe-area-inset-top,0px));padding-top:env(safe-area-inset-top,0px);background:var(--navbg);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+.nav .wrap{height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{font-weight:700;color:var(--ink);white-space:nowrap}.brand:hover{text-decoration:none}
+.menu{display:flex;gap:26px;list-style:none;margin:0;padding:0;overflow-x:auto;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{color:var(--muted);font-size:14px;white-space:nowrap;padding:6px 0;border-bottom:2px solid transparent}
+.menu a:hover{color:var(--ink);text-decoration:none}
+.menu a.on{color:var(--ink);border-bottom-color:var(--ink)}
+@media(max-width:640px){.menu{gap:18px}.brand{font-size:15px}}
+
+/* hero */
+.hero{padding:calc(var(--nav-h) + 72px) 0 88px}
+.hero .wrap{display:grid;grid-template-columns:1.4fr .6fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(52px,10vw,104px);font-weight:700;letter-spacing:-.035em;line-height:1.05;margin:0}
+.hero .role{font-size:clamp(20px,3vw,28px);font-weight:300;margin:18px 0 0;color:var(--muted)}
+.hero .aff{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--line);max-width:30em;font-size:16px}
+.hero .aff span{display:block;color:var(--muted);font-size:15px}
+.photo{aspect-ratio:4/5;background:var(--panel);border-radius:18px;position:relative;overflow:hidden;max-width:300px;margin-left:auto;width:100%}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+@media(max-width:760px){.hero{padding-top:calc(var(--nav-h) + 40px)}.hero .wrap{grid-template-columns:1fr;gap:32px}.photo{margin:0;max-width:200px}}
+
+/* sections */
+section{padding:80px 0;border-top:1px solid var(--line)}
+section.tint{background:var(--panel)}
+.sec{display:grid;grid-template-columns:240px 1fr;gap:40px}
+.sec h2{font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:1.3;margin:0}
+.sec .en{display:block;color:var(--muted);font-size:15px;font-weight:400;margin-top:4px;letter-spacing:0}
+@media(max-width:760px){section{padding:56px 0}.sec{grid-template-columns:1fr;gap:20px}}
+
+.lead{font-size:clamp(20px,2.6vw,26px);line-height:1.55;font-weight:300;margin:0;letter-spacing:-.01em}
+.rows{margin:0;padding:0;list-style:none}
+.rows li{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:20px 0;border-top:1px solid var(--line)}
+.rows li:first-child{border-top:0;padding-top:0}
+.rows .k{color:var(--muted);font-size:15px}
+.rows .v b{display:block;font-weight:500;font-size:17px}
+.rows .v span{color:var(--muted);font-size:15px}
+@media(max-width:640px){.rows li{grid-template-columns:1fr;gap:4px}}
+.topics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.topic{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:22px}
+.topic h3{margin:0 0 6px;font-size:17px;font-weight:500}
+.topic p{margin:0;color:var(--muted);font-size:15px}
+.note{margin:24px 0 0;color:var(--muted);font-size:15px}
+.skill{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.skill:first-child{border-top:0;padding-top:0}
+.skill svg{width:36px;height:36px;color:var(--accent)}
+.skill h3{margin:0;font-size:17px;font-weight:500}
+.skill p{margin:2px 0 0;color:var(--muted);font-size:15px}
+.contact a.c{display:block;font-size:clamp(20px,3vw,28px);font-weight:300;padding:14px 0;border-top:1px solid var(--line);overflow-wrap:anywhere;color:var(--ink)}
+.contact a.c:first-of-type{border-top:0;padding-top:0}
+.contact a.c:hover{color:var(--accent);text-decoration:none}
+footer{border-top:1px solid var(--line);padding:28px 0 calc(28px + env(safe-area-inset-bottom,0px));color:var(--muted);font-size:14px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="주 메뉴">
+<div class="wrap">
+<a class="brand" href="#top">김원관</a>
+<ul class="menu">
+<li><a href="#about">소개</a></li>
+<li><a href="#interests">관심 분야</a></li>
+<li><a href="#education">학력</a></li>
+<li><a href="#experience">경력</a></li>
+<li><a href="#leadership">리더십</a></li>
+<li><a href="#skills">역량</a></li>
+<li><a href="#certifications">자격증</a></li>
+<li><a href="#contact">연락처</a></li>
+</ul>
+</div>
+</nav>
+
+<header id="top" class="hero">
+<div class="wrap">
+<div>
+<h1>김원관</h1>
+<p class="role">해병대 장교를 꿈꾸는 장교후보생</p>
+<p class="aff">서경대학교 군사학과 25학번<span>복수전공: 스포츠 앤 테크놀로지</span></p>
+</div>
+<div class="photo">
+<img src="images.jpg" alt="김원관 프로필 사진" onerror="this.style.display='none'">
+</div>
+</div>
+</header>
+
+<main>
+<section id="about"><div class="wrap sec">
+<h2>소개<span class="en">About</span></h2>
+<div>
+<p class="lead">책임감과 자신감을 가지고 끝까지 해내는 강인한 마음을 가졌습니다. 운동을 했기 때문에 운동에 관심이 많고, 사람들을 이끄는 일에 자신이 있습니다.</p>
+<ul class="rows" style="margin-top:36px">
+<li><span class="k">목표</span><span class="v"><b>해병대 장교</b><span>장성급 이상을 바라보고 있습니다.</span></span></li>
+<li><span class="k">강점</span><span class="v"><b>리더십, 격투 운동</b><span>사람들이 따를 수 있게 하는 리더십이 있습니다.</span></span></li>
+</ul>
+</div>
+</div></section>
+
+<section id="interests" class="tint"><div class="wrap sec">
+<h2>관심 분야<span class="en">Interests</span></h2>
+<div>
+<div class="topics">
+<div class="topic"><h3>현대 전쟁</h3></div>
+<div class="topic"><h3>군사장비</h3></div>
+<div class="topic"><h3>기본 체력 운동법</h3><p>기본 체력을 늘릴 수 있는 운동법</p></div>
+</div>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap sec">
+<h2>학력<span class="en">Education</span></h2>
+<ul class="rows">
+<li><span class="k">재학 중</span><span class="v"><b>서경대학교 군사학과</b><span>25학번 · 복수전공: 스포츠 앤 테크놀로지</span></span></li>
+</ul>
+</div></section>
+
+<section id="experience" class="tint"><div class="wrap sec">
+<h2>경력<span class="en">Experience</span></h2>
+<ul class="rows">
+<li><span class="k">2022.02 – 2026.02</span><span class="v"><b>경호원</b><span>약 4년 · 학업과 병행</span></span></li>
+<li><span class="k">2021.08 – 2023.12</span><span class="v"><b>웨딩홀</b><span>학업과 병행</span></span></li>
+<li><span class="k">고등학교 때부터 현재까지</span><span class="v"><b>선수단 플레잉 코치</b><span>경기 직전 플레잉 코치로 활동하고 있습니다.</span></span></li>
+<li><span class="k">중학교 3학년까지</span><span class="v"><b>태권도 겨루기 선수</b></span></li>
+</ul>
+</div></section>
+
+<section id="leadership"><div class="wrap sec">
+<h2>리더십 활동<span class="en">Leadership</span></h2>
+<div>
+<ul class="rows">
+<li><span class="k">동아리</span><span class="v"><b>선도부장</b><span>선도부 활동을 하며 선도부장을 맡았습니다.</span></span></li>
+<li><span class="k">학생회</span><span class="v"><b>문체부장</b></span></li>
+<li><span class="k">성과</span><span class="v"><b>선도우수학교 선정</b><span>학교 내 선도 활동을 통해 학교의 모범적인 모습을 만들었습니다.</span></span></li>
+</ul>
+<p class="note">선도부장으로서 캠페인과 아침 교내 교육을 꾸준히 이어 교내 질서를 정리했습니다. 이 과정에서 학우들이 어떤 모습의 리더를 믿고 따르게 되는지, 그리고 어떻게 변화하는지 알 수 있었습니다.</p>
+</div>
+</div></section>
+
+<section id="skills" class="tint"><div class="wrap sec">
+<h2>역량<span class="en">Skills</span></h2>
+<div>
+<div class="skill">
+<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12" width="48" height="34" rx="3"/><path d="M14 38 L24 28 L32 34 L46 20"/><line x1="22" y1="54" x2="42" y2="54"/></svg>
+<div><h3>시뮬레이션 경기 분석</h3><p>시뮬레이션 프로그램으로 태권도 경기 자세를 분석할 수 있습니다. 이 분석 능력을 군에서도 함께 활용하고자 합니다.</p></div>
+</div>
+<div class="skill">
+<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="12" r="6"/><path d="M20 20 L26 36 L18 56"/><path d="M26 36 L58 30"/><path d="M22 26 L8 34"/><path d="M22 26 L36 20"/></svg>
+<div><h3>태권도·스케이트 지도</h3><p>태권도와 스케이트를 지도할 수 있는 능력이 있고, 관련 용품을 보유하고 있습니다.</p></div>
+</div>
+<div class="skill">
+<svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><rect x="16" y="16" width="32" height="32" rx="4"/><path d="M24 8v8M32 8v8M40 8v8M24 48v8M32 48v8M40 48v8M8 24h8M8 32h8M8 40h8M48 24h8M48 32h8M48 40h8"/></svg>
+<div><h3>AI 도구</h3><p>클로드, 제미나이, 지피티 등을 사용할 수 있습니다.</p></div>
+</div>
+</div>
+</div></section>
+
+<section id="certifications"><div class="wrap sec">
+<h2>자격증<span class="en">Certifications</span></h2>
+<ul class="rows">
+<li><span class="k">단증</span><span class="v"><b>태권도 4단</b></span></li>
+<li><span class="k">면허</span><span class="v"><b>운전면허 1종 보통</b></span></li>
+<li><span class="k">컴퓨터</span><span class="v"><b>PCT 자격증</b><span>컴퓨터 자격증</span></span></li>
+</ul>
+</div></section>
+
+<section id="contact" class="tint"><div class="wrap sec">
+<h2>연락처<span class="en">Contact</span></h2>
+<div class="contact">
+<a class="c" href="mailto:a01056724584@gmail.com">a01056724584@gmail.com</a>
+<a class="c" href="https://www.instagram.com/0ne__coffin" rel="noopener" target="_blank">Instagram 0ne__coffin</a>
+</div>
+</div></section>
+</main>
+
+<footer><div class="wrap">김원관 · 서경대학교 군사학과</div></footer>
+
+<script>
+(function(){
+  var links=[].slice.call(document.querySelectorAll('.menu a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1));}).filter(Boolean);
+  function setOn(id){links.forEach(function(a){a.classList.toggle('on',a===map[id]);});
+    if(map[id]&&map[id].scrollIntoView){try{map[id].scrollIntoView({inline:'center',block:'nearest'});}catch(e){}}}
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)setOn(e.target.id);});},{rootMargin:'-40% 0px -55% 0px'});
+    secs.forEach(function(s){io.observe(s);});
+  }
+  links.forEach(function(a){a.addEventListener('click',function(){setOn(a.getAttribute('href').slice(1));});});
+})();
+</script>
+</body>
+</html>
+
+
